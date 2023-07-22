@@ -28,9 +28,12 @@ useSeoMeta({
 })
 
 useHead({
+  title: 'Accueil',
+  meta: [
+    { name: 'Accueil', content: 'Bienvenue sur MOKEBISI.' }
+  ],
   htmlAttrs: {
     lang: 'fr',
   },
-  title: 'Accueil'
 })
 </script>

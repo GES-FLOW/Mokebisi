@@ -2,7 +2,8 @@
     <div class="w-full  px-4 md:px-0">
         <TheDescription title="Messages" :links="false" />
 
-        <div class="flex w-full justify-between flex-col sm:flex-row items-center border-b pb-3 px-0 sm:px-20 dark:border-gray-700 gap-2">
+        <div
+            class="flex w-full justify-between flex-col sm:flex-row items-center border-b pb-3 px-0 sm:px-20 dark:border-gray-700 gap-2">
             <USelectMenu v-model="selected" :options="people" placeholder="Filtrer par tag" />
 
             <div class="relative w-full sm:w-2/3 text-gray-600">
@@ -32,7 +33,8 @@
                         class="block p-2.5 w-full text-sm text-gray-900 dark:text-white rounded-lg border border-gray-700 dark:bg-gray-900 dark:border-gray-600"
                         placeholder="Votre message..."></textarea>
 
-                    <label for="message" class="block mt-5 mb-2 text-sm font-medium text-gray-900 dark:text-white">Choix de la
+                    <label for="message" class="block mt-5 mb-2 text-sm font-medium text-gray-900 dark:text-white">Choix de
+                        la
                         catégorie</label>
                     <USelectMenu v-model="selected" :options="people" placeholder="Filtrer par tag" />
                 </div>
@@ -78,6 +80,9 @@ useHead({
     htmlAttrs: {
         lang: 'fr',
     },
+    meta: [
+        { name: 'Messages', content: 'Lisez les derniers messages.' }
+    ],
     title: 'Plaintes'
 })
 
