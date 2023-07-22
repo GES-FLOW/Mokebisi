@@ -30,6 +30,6 @@ useHead({
     htmlAttrs: {
         lang: 'fr',
     },
-    title: 'PLAINTES' ? 'PLAINTES' : 'PLAINTES',
+    title: 'Plaintes'
 })
 </script>
