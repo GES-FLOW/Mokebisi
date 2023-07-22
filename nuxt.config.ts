@@ -1,6 +1,7 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-     app: {
+    spaLoadingTemplate: false,
+    ssr: true,
+    app: {
         head: {
             title: "MOKEBISI",
             meta: [
@@ -17,13 +18,23 @@ export default defineNuxtConfig({
                     content: "MOKEBISI",
                 },
             ],
-            link: [{rel: "icon", type: "image/x-icon", href: "/logo.ico"}],
+            link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
         },
     },
     css: [
         'assets/css/main.css'
     ],
-    devtools: {enabled: true},
+    devtools: {
+        enabled: true,
+
+        experimental: {
+            timeline: true,
+        },
+
+        timeline: {
+            enabled: true,
+        },
+    },
     modules: [
         '@nuxt/devtools',
         '@nuxthq/ui',
@@ -34,8 +45,8 @@ export default defineNuxtConfig({
         // '@nuxtjs/supabase'
     ],
     colorMode: {
-        preference: 'system', // default value of $colorMode.preference
-        fallback: 'light', // fallback value if not system preference found
+        preference: 'system',
+        fallback: 'light',
         hid: 'nuxt-color-mode-script',
         globalName: '__NUXT_COLOR_MODE__',
         componentName: 'ColorScheme',
