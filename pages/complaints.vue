@@ -2,16 +2,16 @@
     <div class="w-full  px-4 md:px-0">
         <TheDescription title="Messages" :links="false" />
 
-        <div class="flex w-full justify-between items-center border-b pb-3 px-20 dark:border-gray-700 gap-2">
+        <div class="flex w-full justify-between flex-col sm:flex-row items-center border-b pb-3 px-0 sm:px-20 dark:border-gray-700 gap-2">
             <USelectMenu v-model="selected" :options="people" placeholder="Filtrer par tag" />
 
-            <div class="relative w-2/3 text-gray-600">
+            <div class="relative w-full sm:w-2/3 text-gray-600">
                 <input type="search" name="search" placeholder="Recherchez un message"
                     class="bg-white border w-full dark:bg-slate-950 h-10 px-5 pr-10 rounded-full text-sm focus:outline-none">
             </div>
 
             <button @click="isOpen = true"
-                class="w-1/4  inline-flex items-center justify-center rounded-3xl text-sm text-white font-medium bg-blue-500 text-primary-foreground hover:bg-blue-500/90 h-11 px-8">
+                class="w-full sm:w-1/4  inline-flex items-center justify-center rounded-3xl text-sm text-white font-medium bg-blue-500 text-primary-foreground hover:bg-blue-500/90 h-11 px-8">
                 Ajouter un message
             </button>
         </div>
