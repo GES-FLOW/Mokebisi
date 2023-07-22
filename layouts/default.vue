@@ -1,5 +1,5 @@
 <template>
-  <main class="h-screen w-full dark:bg-slate-950">
+  <main class="min-h-screen relative w-full dark:bg-slate-950">
 
     <NavigationHeader />
     <slot />

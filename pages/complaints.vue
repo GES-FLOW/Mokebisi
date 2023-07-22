@@ -1,6 +1,6 @@
 <template>
     <div class="w-full mx-auto container px-4 md:px-0">
-        <TheDescription />
+        <TheDescription title="Messages" :links="false" />
 
         <section class="container flex items-center justify-center gap-6 pb-8 pt-6 md:py-10">
             <div class="flex w-[980px] max-w-full flex-col items-start gap-4">
