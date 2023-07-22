@@ -1,5 +1,5 @@
 <template>
-    <div class="h-screen w-screen bg-gray-200/40 dark:bg-gray-950 flex items-center">
+    <div class="h-screen w-screen bg-gray-200/40 dark:bg-slate-950 flex items-center">
         <div class="container flex flex-col md:flex-row items-center justify-center px-5 text-gray-700">
             <div class="max-w-md">
                 <div class="text-5xl dark:text-white font-bold">404</div>

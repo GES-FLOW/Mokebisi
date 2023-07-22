@@ -7,6 +7,7 @@
                         <Icon name="mdi:apps" size="30" />
                     </UDropdown>
                 </div>
+                
                 <div class="flex justify-between items-center space-x-8">
                     <div class="flex space-x-2 items-center">
                         <Icon name="mdi:message-alert-outline" size="30" />
