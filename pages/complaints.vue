@@ -58,6 +58,8 @@
             <div class="flex w-[1400px] max-w-full flex-col items-start gap-4">
                 <div class="flex flex-wrap w-full items-center justify-between py-4">
                     <UtilsCard v-for="(s, i) in 6" :key="i" />
+                    
+                    <UPagination v-model="page" :total="items.length" :prev-button="{ icon: 'i-heroicons-arrow-small-left-20-solid', label: 'Précédent', color: 'white' }" :next-button="{ icon: 'i-heroicons-arrow-small-right-20-solid', trailing: true, label: 'Prochain', color: 'white' }" />
                 </div>
             </div>
         </section>
@@ -91,4 +93,7 @@ const people = ['Wade Cooper', 'Arlene McCoy', 'Devon Webb', 'Tom Cook', 'Tanya 
 const selected = ref(people[0])
 
 const isOpen = ref<boolean>(false)
+
+const page = ref(1)
+const items = ref(Array(55))
 </script>
