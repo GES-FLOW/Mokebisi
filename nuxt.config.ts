@@ -2,6 +2,7 @@ export default defineNuxtConfig({
     spaLoadingTemplate: false,
     ssr: true,
     app: {
+        pageTransition: { name: 'page', mode: 'out-in' },
         head: {
             title: "MOKEBISI",
             meta: [
