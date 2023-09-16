@@ -38,7 +38,7 @@ export default defineNuxtConfig({
     },
     modules: [
         '@nuxt/devtools',
-        '@nuxthq/ui',
+        '@nuxt/ui',
         'nuxt-icon',
         '@nuxtjs/google-fonts',
         '@dargmuesli/nuxt-cookie-control',
